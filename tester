@@ -1,0 +1,43 @@
+public class StringMethodsTester 
+{
+
+	public static void main(String[] args) 
+	{
+		boolean properMethod = StringMethods.proper("sPIdERMan").equals("Spiderman");
+		String email = StringMethods.email("JoHN", "RidDlE");
+		boolean emailMethod = email.equals("johnrid1@k12.ipsd.org")||email.equals("johnrid2@k12.ipsd.org")||email.equals("johnrid3@k12.ipsd.org")||email.equals("johnrid4@k12.ipsd.org")||email.equals("johnrid5@k12.ipsd.org")||email.equals("johnrid6@k12.ipsd.org")||email.equals("johnrid7@k12.ipsd.org")||email.equals("johnrid8@k12.ipsd.org")||email.equals("johnrid9@k12.ipsd.org")||email.equals("johnrid10@k12.ipsd.org")||email.equals("johnrid11@k12.ipsd.org")||email.equals("johnrid12@k12.ipsd.org")||email.equals("johnrid13@k12.ipsd.org")||email.equals("johnrid14@k12.ipsd.org")||email.equals("johnrid15@k12.ipsd.org")||email.equals("johnrid16@k12.ipsd.org")||email.equals("johnrid17@k12.ipsd.org")||email.equals("johnrid18@k12.ipsd.org")||email.equals("johnrid19@k12.ipsd.org")||email.equals("johnrid20@k12.ipsd.org");
+		boolean rearrangerMethod = StringMethods.rearranger("MeTeA").equals("Aetem");
+		boolean methodXoXoMethod = StringMethods.methodXoXo("Mathematics").equals("MathemaXoXo");
+      	int r = StringMethods.randomNumGenerator(4, 6);
+		boolean randomNumGeneratorMethod = r == 4 || r == 5 || r == 6;
+		boolean eliminateTwoSpacesMethod = StringMethods.eliminateTwoSpaces("Ruth Bader Ginsburg").equals("RuthBaderGinsburg");
+		
+		if(properMethod && emailMethod && rearrangerMethod 
+				&& methodXoXoMethod && randomNumGeneratorMethod
+				&& eliminateTwoSpacesMethod)
+		{
+			System.out.println("Nice work!  All methods run perfectly");
+		}
+		else
+		{
+			if(!properMethod)
+				System.out.println("the proper() method needs to be fixed");
+			if(!emailMethod)
+				System.out.println("the email() method needs to be fixed");
+			if(!rearrangerMethod)
+				System.out.println("the rearranger() method needs to be fixed");
+			if(!methodXoXoMethod)
+				System.out.println("the methodXoXo() method needs to be fixed");
+			if(!randomNumGeneratorMethod)
+				System.out.println("the randomNumGenerator() method needs to be fixed");
+			if(!eliminateTwoSpacesMethod && properMethod && emailMethod && rearrangerMethod && methodXoXoMethod && randomNumGeneratorMethod)
+				System.out.println("Nice work!  All your methods, except for the extra challenge method (eliminateTwoSpaces) works!");
+		}
+	}
+
+}
+
+
+
+
+
